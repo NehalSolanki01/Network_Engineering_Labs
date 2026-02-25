@@ -40,15 +40,6 @@ Two physical router interfaces were used:
 
 ---
 
-## IP Addressing Plan
-
-| Device | Interface | IP Address   | Subnet Mask   | Default Gateway |
-|--------|-----------|-----------  -|------------  -|-----------------|
-| PC0    | NIC       | 192.168.1.10 | 255.255.255.0 | 192.168.1.1     |
-| Router | G0/0      | 192.168.1.1  | 255.255.255.0 | N/A             |
-| Router | G0/1      | 192.168.2.1  | 255.255.255.0 | N/A             |
-| PC1    | NIC       | 192.168.2.10 | 255.255.255.0 | 192.168.2.1     |
-
 ---
 
 ## Router Configuration
