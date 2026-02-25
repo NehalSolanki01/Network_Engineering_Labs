@@ -105,4 +105,17 @@ Issues were resolved using:
 - Logical problem isolation
 - Documentation of technical work
 
+  ## 📚 Lessons Learned
+
+- A router interface must be manually enabled (`no shutdown`) before it can forward traffic.
+- The default gateway on a PC must match the exact IP address of the router interface in that subnet.
+- Subnet masks determine whether traffic is considered local or remote.
+- ARP is triggered only after the Layer 3 decision is made (local → ARP for host, remote → ARP for gateway).
+- Directly connected routes are automatically added to the routing table once an interface is configured and up.
+- IP addresses remain end-to-end, while MAC addresses are rewritten at every router hop.
+- Effective troubleshooting follows a layered approach: Physical → Interface State → IP Configuration → Routing Table.
+- First ping failure is often due to ARP resolution and is expected behavior.
+
+This lab strengthened my understanding of fundamental routing logic, subnet boundaries, and the interaction between Layer 2 and Layer 3.
+
 --------------
