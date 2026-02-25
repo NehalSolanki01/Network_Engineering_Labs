@@ -125,6 +125,73 @@ ping 192.168.10.10  ✅
 
 Inter-VLAN routing successfully established.
 
+🧠 **Key Technical Concepts Demonstrated**
+1️⃣ VLAN Segmentation
+
+Each VLAN creates a separate Layer 2 broadcast domain.
+
+2️⃣ 802.1Q Trunking
+
+Single physical link carries multiple VLANs using tagged frames.
+
+3️⃣ Router-on-a-Stick
+
+Subinterfaces map VLAN tags to Layer 3 gateway interfaces.
+
+4️⃣ ARP Behavior
+
+Same subnet → ARP for destination IP
+
+Different subnet → ARP for gateway IP
+
+5️⃣ Encapsulation Flow
+
+IP header remains end-to-end
+
+MAC header is rewritten at each router hop
+
+**Troubleshooting Performed**
+
+Router interface initially administratively down
+
+Trunk operational mode down until router interface enabled
+
+VLAN-to-subinterface tag alignment validation
+
+First-packet ARP drop observation
+
+Verified trunk allowed VLAN list
+
+Validated routing table entries
+
+Structured troubleshooting approach:
+
+Check physical layer
+
+Verify interface state
+
+Validate VLAN configuration
+
+Confirm trunk operation
+
+Inspect routing table
+
+**Skills Demonstrated**
+
+VLAN design and segmentation
+
+Trunk configuration
+
+Subinterface implementation
+
+Layer 2 / Layer 3 interaction analysis
+
+Routing verification
+
+CLI-based troubleshooting
+
+Logical network design reasoning
+
 
 ## Lessons Learned
 
