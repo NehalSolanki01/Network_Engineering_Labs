@@ -125,3 +125,25 @@ ping 192.168.10.10  ✅
 
 Inter-VLAN routing successfully established.
 
+
+## Lessons Learned
+
+- VLANs create separate Layer 2 broadcast domains even when devices share the same physical switch.
+- One VLAN should map to one IP subnet to avoid unpredictable routing behavior.
+- Trunk ports carry multiple VLANs using 802.1Q tagging.
+- The VLAN ID configured on the switch must match the `encapsulation dot1Q` value on the router subinterface.
+- A trunk will not become operational if the connected router interface is administratively down.
+- Inter-VLAN routing requires:
+  1) VLAN creation
+  2) Access port assignment
+  3) Trunk configuration
+  4) Matching router subinterfaces
+- When traffic moves between VLANs:
+  - IP addresses remain unchanged
+  - MAC addresses are rewritten at each hop
+- If a VLAN is not allowed on the trunk, traffic for that VLAN will be dropped before reaching the router.
+- ARP behavior differs based on subnet location:
+  - Same subnet → ARP for destination host
+  - Different subnet → ARP for gateway
+
+This lab reinforced how Layer 2 segmentation and Layer 3 routing interact in enterprise network design and strengthened my ability to troubleshoot VLAN and trunk-related issues.
