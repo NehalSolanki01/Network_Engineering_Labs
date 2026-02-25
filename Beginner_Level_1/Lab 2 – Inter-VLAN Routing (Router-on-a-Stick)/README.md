@@ -126,6 +126,7 @@ ping 192.168.10.10  ✅
 Inter-VLAN routing successfully established.
 
 🧠 **Key Technical Concepts Demonstrated**
+
 1️⃣ VLAN Segmentation
 
 Each VLAN creates a separate Layer 2 broadcast domain.
