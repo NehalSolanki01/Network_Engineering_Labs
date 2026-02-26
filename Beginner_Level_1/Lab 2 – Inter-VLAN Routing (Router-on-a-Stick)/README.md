@@ -30,7 +30,7 @@ Cisco 2911 Router
 
 2 End Devices (PCs)
 
-**Logical Segmentation**
+**Logical Segmentation** (images/topology-overview.png)
 
 VLAN	Department	Subnet
 10	SALES	192.168.10.0/24
@@ -86,7 +86,7 @@ interface fa0/2
 interface gigabitEthernet0/1
  switchport mode trunk
 
-**Verification:**
+**Verification:** (images/vlan-verification.png)
 
 show interfaces trunk
 show vlan brief
