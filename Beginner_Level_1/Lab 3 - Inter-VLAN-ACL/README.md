@@ -52,7 +52,6 @@ Router Subinterfaces:
 
 ### Create Extended ACL
 
-```bash
 access-list 100 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255
 access-list 100 deny ip 192.168.30.0 0.0.0.255 192.168.20.0 0.0.0.255
 access-list 100 permit ip any any
@@ -89,7 +88,7 @@ ACL applied on incorrect interface
 
 ACL attached on multiple interfaces simultaneously
 
-Verified using:
+**Verified using:**
 show access-list
 show ip interface
 
