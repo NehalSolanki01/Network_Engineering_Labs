@@ -1,5 +1,14 @@
 # Lab 4 – DHCP per VLAN (Router-on-a-Stick)
 
+**Skills Demonstrated**
+
+- VLAN configuration
+- Router-on-a-Stick
+- 802.1Q trunking
+- DHCP configuration
+- Inter-VLAN routing
+- Network troubleshooting
+
 ## Objective
 
 The goal of this lab is to configure Dynamic Host Configuration Protocol (DHCP) for multiple VLANs in a segmented network. The router acts both as the default gateway for each VLAN and as the DHCP server that automatically assigns IP addresses to hosts.
