@@ -115,24 +115,35 @@ Run on the router:
 show ip nat translations
 
 **Example output:**
+
 Pro Inside global      Inside local      Outside local      Outside global
+
 icmp 203.0.113.1:45    192.168.10.2:45   203.0.113.254      203.0.113.254
+
 This confirms that the private address 192.168.10.2 is translated to 203.0.113.1.
 
 **NAT Statistics**
+
 show ip nat statistics
+
 This command displays NAT usage and active translation counts.
 
 **Packet Flow Explanation**
+
 A PC sends traffic to an external destination.
+
 192.168.10.2 → 203.0.113.254
 
 The router translates the private address.
+
 192.168.10.2 → 203.0.113.1
+
 The ISP router receives the packet and replies.
+
 The router translates the packet back to the internal host.
 
 **Skills Demonstrated**
+
 VLAN segmentation
 Inter-VLAN routing
 Router-on-a-stick configuration
