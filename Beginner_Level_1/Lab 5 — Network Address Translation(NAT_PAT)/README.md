@@ -18,6 +18,7 @@ Verify NAT translations using router commands
 Understand how packets are translated when leaving the internal network
 
 **IP Addressing Scheme**
+
 Device	Interface	IP Address	Description
 R1	G0/0.10	192.168.10.1	VLAN 10 Gateway
 R1	G0/0.20	192.168.20.1	VLAN 20 Gateway
