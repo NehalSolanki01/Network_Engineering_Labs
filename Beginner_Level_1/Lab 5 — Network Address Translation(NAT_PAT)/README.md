@@ -20,13 +20,21 @@ Understand how packets are translated when leaving the internal network
 **IP Addressing Scheme**
 
 Device	Interface	IP Address	Description
+
 R1	G0/0.10	192.168.10.1	VLAN 10 Gateway
+
 R1	G0/0.20	192.168.20.1	VLAN 20 Gateway
+
 R1	G0/0.30	192.168.30.1	VLAN 30 Gateway
+
 R1	G0/1	203.0.113.1	Public NAT address
+
 ISP	G0/0	203.0.113.254	Simulated Internet
+
 PC1	DHCP	192.168.10.x	VLAN 10 host
+
 PC2	DHCP	192.168.20.x	VLAN 20 host
+
 PC3	DHCP	192.168.30.x	VLAN 30 host
 
 **Configuration
