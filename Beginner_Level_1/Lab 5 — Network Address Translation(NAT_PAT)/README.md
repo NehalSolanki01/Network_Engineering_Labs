@@ -40,50 +40,78 @@ PC3	DHCP	192.168.30.x	VLAN 30 host
 **Configuration
 Step 1 — Configure Router Subinterfaces**
 
+
 interface g0/0
+
 no shutdown
 
 interface g0/0.10
+
 encapsulation dot1Q 10
+
 ip address 192.168.10.1 255.255.255.0
+
 ip nat inside
 
 interface g0/0.20
+
 encapsulation dot1Q 20
+
 ip address 192.168.20.1 255.255.255.0
+
 ip nat inside
 
 interface g0/0.30
+
 encapsulation dot1Q 30
+
 ip address 192.168.30.1 255.255.255.0
+
 ip nat inside
 
 **Step 2 — Configure Outside Interface**
+
 interface g0/1
+
 ip address 203.0.113.1 255.255.255.0
+
 ip nat outside
+
 no shutdown
 
+
 **Step 3 — Configure NAT Access List**
+
 access-list 1 permit 192.168.0.0 0.0.255.255
+
 This ACL defines which internal networks are allowed to be translated.
 
 **Step 4 — Enable NAT Overload (PAT)**
+
 ip nat inside source list 1 interface g0/1 overload
+
 This command allows multiple internal hosts to share one public IP address.
 
 **Step 5 — Configure Default Route**
+
 ip route 0.0.0.0 0.0.0.0 203.0.113.254
+
 This route directs traffic toward the ISP router.
 
-**Verification
-Test Connectivity**
+**Verification**
+
+**Test Connectivity**
+
 From a PC:
+
 ping 203.0.113.254
+
 Successful replies confirm connectivity between internal networks and the external router.
 
 **Verify NAT Translations**
+
 Run on the router:
+
 show ip nat translations
 
 **Example output:**
