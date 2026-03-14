@@ -66,24 +66,38 @@ Default gateways configured per VLAN.
 
 **Switch Configuration**
 **Create VLANs**
+
 enable
+
 configure terminal
+
 vlan 10
+
  name SALES
+ 
 vlan 20
+
  name IT
  
+ 
 **Assign Access Ports**
+
 interface fa0/1
+
  switchport mode access
+ 
  switchport access vlan 10
 
 interface fa0/2
+
  switchport mode access
+ 
  switchport access vlan 20
  
 **Configure Trunk**
+
 interface gigabitEthernet0/1
+
  switchport mode trunk
 
 **Verification:** (images/vlan-verification.png)
