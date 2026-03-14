@@ -56,10 +56,15 @@ Best practice followed:
 One VLAN = One Subnet
 
 **IP Addressing Plan**
+
 Device	Interface	VLAN	IP Address
+
 PC0	Fa0/1	10	192.168.10.10
+
 PC1	Fa0/2	20	192.168.20.10
+
 Router	G0/0.10	10	192.168.10.1
+
 Router	G0/0.20	20	192.168.20.1
 
 Default gateways configured per VLAN.
@@ -110,15 +115,25 @@ show vlan brief
 **Enable physical interface:**
 
 interface gigabitEthernet0/0
+
  no shutdown
+
 Subinterface for VLAN 10
+
 interface gigabitEthernet0/0.10
+
  encapsulation dot1Q 10
+ 
  ip address 192.168.10.1 255.255.255.0
+ 
 Subinterface for VLAN 20
+
 interface gigabitEthernet0/0.20
+
  encapsulation dot1Q 20
+ 
  ip address 192.168.20.1 255.255.255.0
+ 
 
 **Verification:**
 
