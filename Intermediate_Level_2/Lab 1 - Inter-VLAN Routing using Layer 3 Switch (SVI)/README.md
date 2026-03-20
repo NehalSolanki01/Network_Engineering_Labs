@@ -114,18 +114,6 @@ ping 192.168.20.2
 
 ---
 
-## 📸 Screenshots
-
-Add the following screenshots to your repository:
-
-* VLAN configuration (`show vlan brief`)
-* SVI configuration (`show ip interface brief`)
-* Routing table (`show ip route`)
-* PC IP configuration
-* Successful ping result
-
----
-
 ## 🧠 Packet Flow Explanation
 
 1. PC1 sends traffic to its default gateway (192.168.10.1)
@@ -145,15 +133,6 @@ Add the following screenshots to your repository:
 * Inter-VLAN routing on a Layer 3 switch is faster than Router-on-a-Stick
 
 ---
-
-## 🚀 Next Steps
-
-* Implement **Access Control Lists (ACLs)** to restrict traffic between VLANs
-* Simulate real-world scenarios like Guest vs Internal network
-* Explore DHCP configuration per VLAN
-
----
-
 ## 🏁 Conclusion
 
 This lab demonstrates how to implement efficient inter-VLAN routing using a Layer 3 switch. It reflects real-world enterprise network design where routing is handled internally within switches for better performance and scalability.
