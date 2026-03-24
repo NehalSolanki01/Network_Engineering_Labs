@@ -1,4 +1,4 @@
-# 🔧 Cisco Device Management Lab
+# 🔧 Cisco Device Management Lab | Factory Reset, Password Recovery, IOS Backup & Upgrade
 
 ## 📌 Overview
 
