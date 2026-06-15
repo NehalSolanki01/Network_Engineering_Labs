@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository documents my structured, hands-on journey toward becoming a Network Engineer, aligned with CCNA fundamentals and real-world enterprise networking practices.
+This repository documents my structured, hands-on journey toward understanding networking concepts, aligned with CCNA fundamentals and real-world enterprise networking practices.
 
 The goal of this lab portfolio is not only to learn networking concepts, but to demonstrate practical implementation, troubleshooting ability, and structured documentation similar to real project environments.
 
